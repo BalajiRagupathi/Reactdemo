@@ -5,7 +5,7 @@ const Aboutd = ({abt , deletedetail}) => {
         <div className="List">
             {
                 abt.map(ninja => {
-                     return ninja.ag > 5 ?  (
+                     return ninja.ag ?  (
                             <div onClick={ () => {deletedetail(ninja.next)} } className="about-contents collection container" key={ninja.next}>
                                 <h6> 
                                     <div className="left">name: { ninja.nm } </div> 

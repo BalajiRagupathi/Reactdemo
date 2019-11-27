@@ -3,9 +3,9 @@ import React,{Component} from 'react';
 class AddDetails extends Component {
 
     state = {
-        nm : null,
-        ag : null,
-        next : null
+      nm : ' ',
+        ag : ' ',
+        next : ' '
     }
     handleChange = (e) =>{
         
@@ -17,9 +17,9 @@ class AddDetails extends Component {
         e.preventDefault();
         this.props.adddet(this.state);
         this.setState({
-            nm: ' ',
-            ag : ' ',
-            next : ' '
+        nm : ' ',
+        ag : ' ',
+        next : ' '
         })
     }
     render() {
@@ -27,9 +27,9 @@ class AddDetails extends Component {
             <div className="Add-details">
                 <form onSubmit={ this.handleSubmit }>
                     <lable htmlFor="name">Name</lable>
-                    <input type = "text" id = "nm" onChange = { this.handleChange } value={this.state.nm} />
+                    <input type = "text" id = "nm" value={this.state.nm} onChange = { this.handleChange }  />
                     <lable htmlFor="age">Age</lable>
-                    <input type = "text" id = "ag" onChange = { this.handleChange } value={this.state.next} />
+                    <input type = "text" id = "ag" value={this.state.ag} onChange = { this.handleChange }  />
                     <button>Submit</button>
                 </form>
             </div>

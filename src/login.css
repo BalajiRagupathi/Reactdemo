@@ -1,0 +1,148 @@
+.back .back-img{
+    width: 100%;
+    height: auto;
+}
+::placeholder {
+	color: white;
+	opacity: 0.5;
+}
+
+:-ms-input-placeholder{
+	color: white;
+	opacity: 0.5;
+}
+
+::-ms-input-placeholder{
+	color: white;
+	opacity: 0.5;
+}
+.loginbox{
+	width: 320px;
+    height: 425px;
+    background :rgba(0,0,0,0.4);
+    color: #f1f1f1;
+    top: 50%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-30%);
+    box-sizing: border-box;
+    padding: 70px 40px;
+    border-radius: 30px;
+}
+
+.user{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 30px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.loginbox p{
+	margin: 0;
+	padding: 0 0 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.loginbox input[type="text"],input[type="password"]
+{
+	border: none;
+	border-bottom: 1px  solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	color: #fff;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 980px){
+.loginbox {
+	width: 526px;
+    height: 692px;
+    top: 45%;
+    left: 52%;
+}
+.user {
+	width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 74px);
+}
+.loginbox input[type="text"],input[type="password"] {
+	height: 70px;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.loginbox input[type="submit"]
+{
+	top: 50%;
+    height: 67px;
+    font-size: 38px;
+    border-radius: 40px;
+	margin-top: 30px;
+}
+.loginbox p{
+	font-size: 40px;
+	padding: 10px 0 20px;
+}
+}
+
+@media (max-width: 454px){
+.loginbox {
+	width: 526px;
+    height: 692px;
+    top: 45%;
+    left: 52%;
+}
+.user {
+	width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 74px);
+}
+.loginbox input[type="text"],input[type="password"] {
+	height: 70px;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.loginbox input[type="submit"]
+{
+	top: 50%;
+    height: 67px;
+    font-size: 38px;
+    border-radius: 40px;
+	margin-top: 30px;
+}
+.loginbox p{
+	font-size: 40px;
+	padding: 10px 0 20px;
+}
+}

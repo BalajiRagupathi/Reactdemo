@@ -4,23 +4,22 @@ import { BrowserRouter , Route , Switch } from 'react-router-dom';
 import Contact from './components/Contact.js';
 import Home from './components/Home.js';
 import Aboutc from './components/About.js';
+import Login from './login.js';
 import './App.css';
 
 class App extends Component {
 
   render(){
     return (
-
       <BrowserRouter>
       <div className="App">
-     
           <Navbar />
           <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={Aboutc} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/login/about" component={Aboutc} />
+          <Route path="/login/contact" component={Contact} />
+           <Route path="/login" component={Login} />
           </Switch>
-     
     </div>
         </BrowserRouter>
     );

@@ -11,8 +11,9 @@ const Navbar = (props) => {
             <div className="container">
                 <ul className="right">
                     <li><Link to="/" ><h5>Home</h5></Link></li>
-                    <li><NavLink to="/About" ><h5>About</h5></NavLink></li>
-                    <li><NavLink to="/Contact" ><h5>Contact</h5></NavLink></li>
+                    <li><NavLink to="/login/About" ><h5>About</h5></NavLink></li>
+                    <li><NavLink to="/login/Contact" ><h5>Contact</h5></NavLink></li>
+                     <li><NavLink to="/login" ><h5>Logout</h5></NavLink></li>
                 </ul>
             </div>
         </nav>
