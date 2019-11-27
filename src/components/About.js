@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import About from '../About.js';
+import About from './Aboutd.js';
 import AddDetails from '../AddDetails';
 import Color from '../hoc/Colors';
 
@@ -9,36 +9,38 @@ state = {
   age: 20,
 
     about : [
-     { nm: 'John' , ag: 18 , nex: 1 },
-     { nm: 'Metha' , ag: 19 , nex: 2 },
-      {nm: 'Pra' , ag: 20 , nex: 3 }
+     { nm: 'John' , ag: 18 , next: 1 },
+     { nm: 'Metha' , ag: 19 , next: 2 },
+      {nm: 'Pra' , ag: 20 , next: 3 }
     ]
   }
 
   adddet = ( val ) => {
-    val.next = Math.random();
+    val.next = Math.floor(Math.random() * 100);
    let about = [...this.state.about , val];
    this.setState({
      about : about
    })
+   console.log(about);
   }
 
   deletedetail = ( delid ) => {
     const about = this.state.about.filter(ele =>{
-      return ele.nex !== delid
+      return ele.next !== delid
     })
     this.setState({
-      about
+      about: about
     })
+    console.log(about);
   }
 
   render(){
     return (
-      <div className="About-content">
-      <h1>HI it's me { this.state.name } and am { this.state.age }</h1>
-      <h2>About</h2>
-      <About deletedetail ={ this.deletedetail } abt={this.state.about } /> 
-      <AddDetails adddet = { this.adddet } />
+      <div className="About container">
+        <h1 className="center">About</h1>
+        <h4>HI it's me { this.state.name } and am { this.state.age } , my friends are</h4>
+        <About deletedetail ={ this.deletedetail } abt={this.state.about } /> 
+        <AddDetails adddet = { this.adddet } />
     </div>
     );
   }

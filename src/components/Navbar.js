@@ -7,12 +7,12 @@ const Navbar = (props) => {
         props.history.push("/about")
     }, 2000)*/
     return (
-        <nav className="navbar">
-            <div className="navbar-content">
-                <ul>
-                    <li><Link to="/" >Home</Link></li>
-                    <li><NavLink to="/About" >About</NavLink></li>
-                    <li><NavLink to="/Contact" >Contact</NavLink></li>
+        <nav className="nav-wrapper">
+            <div className="container">
+                <ul className="right">
+                    <li><Link to="/" ><h5>Home</h5></Link></li>
+                    <li><NavLink to="/About" ><h5>About</h5></NavLink></li>
+                    <li><NavLink to="/Contact" ><h5>Contact</h5></NavLink></li>
                 </ul>
             </div>
         </nav>
