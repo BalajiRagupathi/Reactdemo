@@ -30,7 +30,7 @@ class AddDetails extends Component {
                     <input type = "text" id = "nm" value={this.state.nm} onChange = { this.handleChange }  />
                     <lable htmlFor="age">Age</lable>
                     <input type = "text" id = "ag" value={this.state.ag} onChange = { this.handleChange }  />
-                    <button>Submit</button>
+                    <button className="btn">Submit</button>
                 </form>
             </div>
         );

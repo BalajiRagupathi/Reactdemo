@@ -1,6 +1,8 @@
 .back .back-img{
     width: 100%;
-    height: auto;
+    height: 100%;
+	margin: 0;
+	padding: 0;
 }
 ::placeholder {
 	color: white;
@@ -16,133 +18,318 @@
 	color: white;
 	opacity: 0.5;
 }
+
+nav{
+	background-color: #00002c;
+}
+
+.btn{
+	background-color: #00002c;
+}
+
 .loginbox{
-	width: 320px;
-    height: 425px;
-    background :rgba(0,0,0,0.4);
+	width: 112px;
+    height: 120px;
+    top: 12%;
+    left: 73%;
+    padding: 1px 11px;
+    background: rgba(0,0,0,0.4);
     color: #f1f1f1;
-    top: 50%;
-    left: 70%;
     position: absolute;
-    transform: translate(-50%,-30%);
+    transform: translate(-48%,50%);
     box-sizing: border-box;
-    padding: 70px 40px;
-    border-radius: 30px;
+    border-radius: 7px;
 }
 
 .user{
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	position: absolute;
-	top: -50px;
-	left: calc(50% - 50px);
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 15px);
 }
 
 h1{
+	padding: 0;
+    font-size: 13px;
 	margin: 0;
-	padding: 0 0 30px;
 	text-align: center;
-	font-size: 40px;
 }
 
 .loginbox p{
+	font-size: 10px;
+    padding: 0;
 	margin: 0;
-	padding: 0 0 10px;
 	font-weight: bold;
-	font-size: 20px;
 }
 
-.loginbox input[type="text"],input[type="password"]
+.loginbox input[type="text"]
 {
 	border: none;
 	border-bottom: 1px  solid #fff;
 	background: transparent;
 	outline: none;
-	height: 30px;
+	height: 12px;
 	color: #fff;
-	font-size: 16px;
+    font-size: 9px;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 0;
+}
+.loginbox input[type="password"]{
+	border: none;
+	border-bottom: 1px  solid #fff;
+	background: transparent;
+	outline: none;
+	height: 12px;
+	color: #fff;
+    font-size: 9px;
+	width: 100%;
+	margin-bottom: 0;
 }
 
 .loginbox input[type="submit"]
 {
 	border: none;
 	outline: none;
-	height: 40px;
+	height: 12px;
 	background: #fb2525;
 	color: #fff;
-	font-size: 18px;
-	border-radius: 20px;
+    font-size: 6px;
+    border-radius: 35px;
 	width: 100%;
+    margin-top: 0px;
 	margin-bottom: 20px;
 }
 
-@media screen and (max-width: 980px){
+@media screen and (min-width: 425px){
 .loginbox {
-	width: 526px;
-    height: 692px;
-    top: 45%;
-    left: 52%;
+	width: 145px;
+    height: 133px;
+    top: 8%;
+    left: 73%;
+    padding: 5px 17px;
+    transform: translate(-47%,40%);
 }
 .user {
-	width: 160px;
-    height: 160px;
+	width: 35px;
+    height: 35px;
     border-radius: 50%;
     position: absolute;
-    top: -100px;
-    left: calc(50% - 74px);
+    top: -33px;
+    left: calc(50% - 17px);
 }
-.loginbox input[type="text"],input[type="password"] {
-	height: 70px;
-	font-size: 30px;
-	margin-bottom: 40px;
+h1{
+    padding: 4px 0;
+    font-size: 16px;
+}
+.loginbox p{
+	font-size: 12px;
+    padding: 0;
+}
+.loginbox input[type="text"] {
+	height: 20px;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+.loginbox input[type="password"]{
+	height: 20px;
+    font-size: 11px;
+    margin-bottom: 0;
 }
 .loginbox input[type="submit"]
 {
-	top: 50%;
-    height: 67px;
-    font-size: 38px;
-    border-radius: 40px;
-	margin-top: 30px;
-}
-.loginbox p{
-	font-size: 40px;
-	padding: 10px 0 20px;
+	height: 18px;
+    font-size: 9px;
+    border-radius: 31px;
+    margin-top: 10px;
 }
 }
 
-@media (max-width: 454px){
+@media only screen and (min-width: 768px){
 .loginbox {
-	width: 526px;
-    height: 692px;
-    top: 45%;
-    left: 52%;
+	width: 190px;
+    height: 254px;
+    top: 15%;
+    left: 68%;
+    padding: 7px 16px;
+	transform: translate(-35%,13%);
+	border-radius: 14px;
 }
 .user {
-	width: 160px;
-    height: 160px;
+	width: 60px;
+    height: 60px;
     border-radius: 50%;
     position: absolute;
-    top: -100px;
-    left: calc(50% - 74px);
+    top: -41px;
+    left: calc(50% - 33px);
 }
-.loginbox input[type="text"],input[type="password"] {
-	height: 70px;
-	font-size: 30px;
-	margin-bottom: 40px;
+h1{
+	padding: 7px 0 7px;
+    font-size: 28px;
+}
+.loginbox p{
+	font-size: 18px;
+    padding: 4px 0 4px
+}
+.loginbox input[type="text"] {
+	height: 25px;
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+.loginbox input[type="password"]{
+	height: 25px;
+    font-size: 17px;
+    margin-bottom: 14px;
 }
 .loginbox input[type="submit"]
 {
-	top: 50%;
-    height: 67px;
-    font-size: 38px;
-    border-radius: 40px;
-	margin-top: 30px;
+	height: 35px;
+    font-size: 18px;
+    border-radius: 34px;
+    margin-top: 12px;
+}
+}
+
+@media only screen and (min-width: 1024px){
+.loginbox {
+	width: 289px;
+    height: 362px;
+    top: 19%;
+    left: 68%;
+    padding: 21px 32px;
+	transform: translate(-34%,7%);
+	border-radius: 23px;
+}
+.user {
+	width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: -49px;
+    left: calc(50% - 36px);
+}
+h1{
+	padding: 4px 0 4px;
+    font-size: 32px;
+}
+.loginbox p{
+	font-size: 24px;
+    padding: 4px 0 4px
+}
+.loginbox input[type="text"] {
+	height: 45px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.loginbox input[type="password"]{
+	height: 45px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.loginbox input[type="submit"]
+{
+	height: 46px;
+    font-size: 29px;
+    border-radius: 34px;
+    margin-top: 11px;
+}
+}
+
+@media only screen and (min-width: 1440px){
+.loginbox {
+	width: 394px;
+    height: 500px;
+    top: 25%;
+    left: 68%;
+    padding: 39px 43px;
+	transform: translate(-29%,-7%);
+	border-radius: 30px;
+}
+.user {
+	width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: absolute;
+    top: -66px;
+    left: calc(50% - 50px);
+}
+h1{
+	padding: 9px 0 9px;
+	font-size: 36px;
+}
+.loginbox p{
+	font-size: 30px;
+    padding: 8px 0 9px;
+}
+.loginbox input[type="text"] {
+	    height: 59px;
+    font-size: 26px;
+    margin-bottom: 23px;
+}
+.loginbox input[type="password"]{
+	    height: 59px;
+    font-size: 26px;
+    margin-bottom: 23px;
+}
+.loginbox input[type="submit"]
+{
+	height: 57px;
+    font-size: 34px;
+    border-radius: 42px;
+    margin-top: 17px;
+}
+}
+
+@media only screen and (min-width: 1800px){
+.loginbox {
+    top: 32%;
+	transform: translate(-34%,7%);
+}
+}
+
+@media only screen and (min-width: 2560px){
+	.loginbox {
+	width: 545px;
+    height: 692px;
+    top: 37%;
+    left: 67%;
+    padding: 42px 61px;
+	transform: translate(-25%,-30%);
+	border-radius: 35px;
+}
+.user {
+	width: 153px;
+    height: 153px;
+    border-radius: 50%;
+    position: absolute;
+    top: -101px;
+    left: calc(50% - 75px);
+}
+h1{
+	padding: 26px 0 22px;
+    font-size: 48px;
 }
 .loginbox p{
 	font-size: 40px;
-	padding: 10px 0 20px;
+    padding: 15px 0 15px;
+}
+.loginbox input[type="text"] {
+	height: 70px;
+    font-size: 32px;
+    margin-bottom: 31px;
+}
+.loginbox input[type="password"]{
+	height: 70px;
+    font-size: 32px;
+    margin-bottom: 31px;
+}
+.loginbox input[type="submit"]
+{
+	top: 0%;
+    height: 80px;
+    font-size: 41px;
+    border-radius: 29px;
+    margin-top: 32px;
 }
 }
