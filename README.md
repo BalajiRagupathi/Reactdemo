@@ -1,4 +1,4 @@
-Hosting this react website through https://vibrant-lovelace-6136e8.netlify.com/
+Hosting this react website through https://rockerscrew.netlify.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
